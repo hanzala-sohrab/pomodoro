@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/freeCodeCamp/pomodoro/static/css/main.5e1ce939.css",
+    "main.js": "/freeCodeCamp/pomodoro/static/js/main.34269ad1.js",
+    "static/js/787.b1af5461.chunk.js": "/freeCodeCamp/pomodoro/static/js/787.b1af5461.chunk.js",
+    "static/media/beep.mp3": "/freeCodeCamp/pomodoro/static/media/beep.e79e0abb7c74667ec9d7.mp3",
+    "index.html": "/freeCodeCamp/pomodoro/index.html",
+    "main.5e1ce939.css.map": "/freeCodeCamp/pomodoro/static/css/main.5e1ce939.css.map",
+    "main.34269ad1.js.map": "/freeCodeCamp/pomodoro/static/js/main.34269ad1.js.map",
+    "787.b1af5461.chunk.js.map": "/freeCodeCamp/pomodoro/static/js/787.b1af5461.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e1ce939.css",
+    "static/js/main.34269ad1.js"
+  ]
+}
