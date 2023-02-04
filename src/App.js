@@ -26,12 +26,12 @@ const App = () => {
       audioElement.current.currentTime = 0;
       if (timerLabel === "Session") {
         setTimeLeft(breakLength * 60);
-        setTotalSession(prevTotal => prevTotal + sessionLength);
+        setTotalSession(prevTotal => prevTotal + 1);
         setTimerLabel("Break");
       }
       if (timerLabel === "Break") {
         setTimeLeft(sessionLength * 60);
-        setTotalBreak(prevTotal => prevTotal + breakLength);
+        setTotalBreak(prevTotal => prevTotal + 1);
         setTimerLabel("Session");
       }
     }
