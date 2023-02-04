@@ -10,6 +10,8 @@ const App = () => {
   const [timerLabel, setTimerLabel] = useState("Session");
   const [timeLeft, setTimeLeft] = useState(1500);
   const [pause, setPause] = useState(true);
+  const [totalSession, setTotalSession] = useState(0);
+  const [totalBreak, setTotalBreak] = useState(0);
 
   const audioElement = useRef(null);
 
@@ -24,10 +26,12 @@ const App = () => {
       audioElement.current.currentTime = 0;
       if (timerLabel === "Session") {
         setTimeLeft(breakLength * 60);
+        setTotalSession(prevTotal => prevTotal + sessionLength);
         setTimerLabel("Break");
       }
       if (timerLabel === "Break") {
         setTimeLeft(sessionLength * 60);
+        setTotalBreak(prevTotal => prevTotal + breakLength);
         setTimerLabel("Session");
       }
     }
@@ -112,6 +116,12 @@ const App = () => {
         </button>
       </div>
       <audio id="beep" ref={audioElement} src={beep}></audio>
+      <div>
+        #sessions = {totalSession}
+      </div>
+      <div>
+        #breaks = {totalBreak}
+      </div>
     </div>
   );
 }
